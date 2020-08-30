@@ -25,7 +25,7 @@ router.get('/:id', (req, res) => {
   })
   .then(dbCategoryData => {
     if (!dbCategoryData) {
-        res.status(404).json({ messsage: ' No categories found with this id' });
+        res.status(404).json({ messsage: 'No categories found with this id' });
         return;
     }
     res.json(dbCategoryData);
@@ -38,14 +38,50 @@ router.get('/:id', (req, res) => {
 
 // create a new category
 router.post('/', (req, res) => {
+  Category.create({
+
+  })
+  .then(dbCategoryData => res.json(dbCategoryData))
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
 });
 
 // update a category by its `id` value
 router.put('/:id', (req, res) => {
+  Category.update({
+
+  })
+  .then(dbCategoryData => {
+    if (!dbCategoryData) {
+        res.status(404).json({ message: 'No categories found with this id' });
+        return;
+    }
+    res.json(dbCategoryData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.json(500).json(err);
+  });
 });
 
 // delete a category by its `id` value
 router.delete('/:id', (req, res) => {
+  Category.destroy({
+
+  })
+  .then(dbCategoryData => {
+    if (!dbCategoryData) {
+        res.status(404).json({ message: 'No categories found with this id' });
+        return;
+    }
+    res.json(dbCategoryData);
+  })
+  .catch(err => {
+    console.log(err);
+    res.status(500).json(err);
+  });
   
 });
 
