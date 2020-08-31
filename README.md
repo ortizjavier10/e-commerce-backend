@@ -11,7 +11,6 @@ This is a backend application that can be used by an E-commernce company.
 * [Usage](#usage)
 * [Sample](#sample)
 * [License](#license)
-* [Contribution](#contribution)
 * [Questions](#questions)
 
 ## Installation
@@ -41,7 +40,7 @@ Video demonstrating the application:https://drive.google.com/file/d/1OPeqxdSAq__
 
 
 ## License
-Team Profile Generator is licensed under the MIT License.
+E-commerce backend is licensed under the MIT License.
 
 ## Questions
 If you have any question please check out my GitHub https://github.com/ortizjavier10 or email me at ortiz.javier10@gmail.com .
