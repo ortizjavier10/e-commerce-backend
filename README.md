@@ -35,10 +35,10 @@ npm install --save mysql2
 
 ## Sample
 Sample scheenshot:
-<img src="" >
+<img src="./images/screenshot.png" >
 
 Video demonstrating the application:
-
+Part 1:https://drive.google.com/file/d/1OPeqxdSAq__dIx282zTRR_i0ZA3l7r_N/view
 
 
 ## License
